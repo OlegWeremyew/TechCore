@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  gap: 24px;
+  height: 266px;
+  padding-top: 168px;
+
+  .img_bell {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+  }
+
+  .img_logo {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+  }
+}

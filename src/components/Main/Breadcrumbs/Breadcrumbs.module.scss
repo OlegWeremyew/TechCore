@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 6px;
+
+  .setting_img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .text {
+    color: #00A0EC;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1px;
+  }
+
+  .arrow_img {
+    width: 4.47px;
+    height: 8.11px;
+  }
+
+}
