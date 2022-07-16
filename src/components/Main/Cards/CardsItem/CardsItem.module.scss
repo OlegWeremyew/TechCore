@@ -1,3 +1,239 @@
 .wrapper {
+  width: 304px;
+  height: 173px;
+  margin-top: 40px;
 
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid rgba(46, 91, 255, 0.1);
+  position: relative;
+
+  .contextMenu {
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 112px;
+    padding: 0;
+
+    gap: 16px;
+    background: #FFFFFF;
+    border: 0.1px solid #EEF0F6;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.05), 2px 2px 15px rgba(0, 44, 175, 0.05);
+    border-radius: 6px;
+
+    .settings {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+
+      .option {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+        gap: 8px;
+
+        width: 112px;
+        height: 16px;
+
+        img {
+          width: 14px;
+          height: 14px;
+          cursor: pointer;
+        }
+
+        p {
+          width: 90px;
+          height: 16px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          mix-blend-mode: normal;
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          cursor: pointer;
+
+          &:hover {
+            color: #00A0EC;
+          }
+        }
+      }
+    }
+
+  }
+
+  .inner {
+    margin-left: 20px;
+    margin-top: 20px;
+
+    .innerBlock {
+
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      margin-bottom: 25px;
+
+      h4 {
+        height: 21px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        color: #1E212A;
+      }
+
+      button {
+        width: 72px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        border-radius: 10px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        border: none;
+
+        color: #FFFFFF;
+        background: #00A0EC;
+
+        &:hover {
+          background-color: #0683DD;
+        }
+
+        &:disabled {
+          background: linear-gradient(0deg, rgba(0, 160, 236, 0.7), rgba(0, 160, 236, 0.7)), #FFFFFF;
+        }
+      }
+
+      .menu {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        z-index: 1;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .block {
+          display: flex;
+          flex-direction: column;
+          width: 2.81px;
+          height: 11.85px;
+          gap: 1.71px;
+
+          .circle {
+            background-color: #DADADA;
+            height: 2.81px;
+            width: 2.81px;
+            border-radius: 50%;
+          }
+        }
+
+
+        &:hover {
+          background: #EEF7FC;
+
+          & > .block > .circle {
+            background-color: #00A0EC;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+
+    width: 272px;
+    height: 16px;
+    margin-bottom: 10px;
+
+    .text {
+      width: 91px;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+
+      display: flex;
+      align-items: center;
+      color: #1E212A;
+    }
+
+    .value {
+      height: 16px;
+      width: 124px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+
+      display: flex;
+      align-items: center;
+
+      color: #00A0EC;
+    }
+  }
+
+  .friends {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 4px;
+
+    width: 261px;
+    height: 30px;
+
+    .img {
+      height: 30px;
+      width: 30px;
+    }
+
+    .num {
+      min-width: 19px;
+      height: 30px;
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+
+      display: flex;
+      align-items: center;
+
+      color: #00A0EC;
+    }
+  }
 }

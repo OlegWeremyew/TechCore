@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+
+  width: 470px;
+  height: 72px;
+  margin-top: 24px;
+
+  .inner {
+    width: 125px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #1E212A;
+
+    span {
+      color: #F24445
+    }
+  }
+}
